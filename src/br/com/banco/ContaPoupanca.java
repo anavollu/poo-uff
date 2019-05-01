@@ -17,4 +17,8 @@ public class ContaPoupanca extends Conta {
         return 0;
     }
 
+    public String getTipo() {
+        return "Conta Poupanca";
+    }
+
 }
