@@ -5,6 +5,8 @@ Nota entre 4 e 6 → Verificação Suplementar.
 Nota abaixo de 4 → Reprovado 
 */
 
+package aluno;
+
 public class Aluno {
     private String nome;
     private float notaP1;
@@ -43,34 +45,6 @@ public class Aluno {
     //Método para pegar a nota da P2 do aluno
     public float getNotaP2 () {
         return this.notaP2;
-    }
-
-    //Método que calcula a média de um aluno
-    public static float calculaMedia (Aluno aluno) {
-        return ((aluno.getNotaP1() + aluno.getNotaP2()) / 2);
-    }
-
-    //Método que calcula o status do aluno
-    public static String statusAluno (Aluno aluno) {
-        float mediaAluno = calculaMedia(aluno);
-        if (mediaAluno < 4) {
-            return "Reprovado";
-        }
-        else if (mediaAluno > 6) {
-            return "Aprovado";
-        }
-        else {
-            return "Verificação Suplementar";
-        }
-    }
-     public static void main(String[] args) {
-        Aluno aluno = new Aluno ("João");
-        aluno.setNotaP1(2.0f);
-        aluno.setNotaP2(3.0f);
-        float media = calculaMedia(aluno);
-        String status = statusAluno(aluno);
-
-        System.out.println("A média do " + aluno + " é: " + media + ". O status é: " + status);
     }
 
 }
