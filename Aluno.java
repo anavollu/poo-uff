@@ -8,10 +8,15 @@ Nota abaixo de 4 → Reprovado
 public class Aluno {
     String nome;
 
+    //O nome que o aluno receber, será o atributo nome do Aluno
+    public Aluno (String nome) {
+        this.nome = nome;
+    }
+
     //Método que calcula a média de um aluno
     public static float calculaMedia (Aluno aluno) {
-        float notaP1 = 7.0;
-        float notaP2 = 8.0;
+        float notaP1 = 7.0f;
+        float notaP2 = 8.0f;
         return ((notaP1 + notaP2) / 2);
     }
 
