@@ -56,4 +56,23 @@ abstract public class Conta {
             this.calcularTributacao(periodo));
 
     }
+
+    public Cliente recuperaTitular(){
+        return this.titular;
+    }
+
+    public int recuperaNumero() {
+        return this.numero;
+    }
+
+    public String recuperaAgencia() {
+        return this.agencia;
+    }
+
+    public String recuperaDataAbertura() {
+        return dataAbertura;
+    }
+
+    abstract String getTipo();
+    }
 }
