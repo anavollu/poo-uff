@@ -74,5 +74,4 @@ abstract public class Conta {
     }
 
     abstract String getTipo();
-    }
 }
