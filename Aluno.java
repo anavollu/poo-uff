@@ -17,6 +17,11 @@ public class Aluno {
         return this.nome;
     } 
 
+    @Override
+    public String toString () {
+        return "aluno = " + this.nome;
+    }
+
     //Método que calcula a média de um aluno
     public static float calculaMedia (Aluno aluno) {
         float notaP1 = 7.0f;
@@ -42,7 +47,7 @@ public class Aluno {
         float media = calculaMedia(aluno);
         String status = statusAluno(aluno);
 
-        System.out.println("A média do " + aluno.getNome() + " é: " + media + ". O status é: " + status);
+        System.out.println("A média do " + aluno + " é: " + media + ". O status é: " + status);
     }
 
 }
