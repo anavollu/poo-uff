@@ -14,7 +14,7 @@ public class App {
         contaCorrente.depositar(1000);
         contaPoupanca.depositar(1000);
 
-        Tributavel tributoContaCorrente = contaCorrente1;
+        Tributavel tributoContaCorrente = contaCorrente;
         Tributavel tributoSeguroDeVida = seguroDeVida;
 
         tributoContaCorrente.getValorImposto();
@@ -25,7 +25,7 @@ public class App {
 
         cliente1.ativos(contaCorrente, contaPoupanca, seguroDeVida);
 
-        System.out.println("Saldo futuro para conta corrente: " + conta1.calcularSaldoFuturo(5));
-        System.out.println("Saldo futuro para conta poupanca: " + conta2.calcularSaldoFuturo(5));
+        System.out.println("Saldo futuro para conta corrente: " + contaCorrente.calcularSaldoFuturo(5));
+        System.out.println("Saldo futuro para conta poupanca: " + contaPoupanca.calcularSaldoFuturo(5));
     }
 }
